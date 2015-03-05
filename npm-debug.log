@@ -1,0 +1,211 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'oracle' ]
+2 info using npm@2.1.10
+3 info using node@v0.10.33
+4 warn package.json demoSite@ No repository field.
+5 warn package.json demoSite@ No README data
+6 silly cache add args [ 'oracle', null ]
+7 verbose cache add spec oracle
+8 silly cache add parsed spec { raw: 'oracle',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'oracle',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 verbose addNamed oracle@*
+10 silly addNamed semver.valid null
+11 silly addNamed semver.validRange *
+12 silly addNameRange { name: 'oracle', range: '*', hasData: false }
+13 silly mapToRegistry name oracle
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/oracle
+17 verbose addNameRange registry:https://registry.npmjs.org/oracle not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/oracle
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 02:15:55
+21 verbose request id 171575abac5a9859
+22 http request GET https://registry.npmjs.org/oracle
+23 http 200 https://registry.npmjs.org/oracle
+24 silly get cb [ 200,
+24 silly get   { date: 'Mon, 09 Feb 2015 10:15:55 GMT',
+24 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"BVJ2M31GAMTIR9NES0869IETE"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '23145',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     'x-served-by': 'cache-sjc3128-SJC',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1423476955.218729,VS0,VE183',
+24 silly get     vary: 'Accept',
+24 silly get     'keep-alive': 'timeout=10, max=50',
+24 silly get     connection: 'Keep-Alive' } ]
+25 silly addNameRange number 2 { name: 'oracle', range: '*', hasData: true }
+26 silly addNameRange versions [ 'oracle',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.1.2',
+26 silly addNameRange     '0.1.3',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.3.1',
+26 silly addNameRange     '0.3.2',
+26 silly addNameRange     '0.3.3',
+26 silly addNameRange     '0.3.4',
+26 silly addNameRange     '0.3.5',
+26 silly addNameRange     '0.3.6',
+26 silly addNameRange     '0.3.7' ] ]
+27 verbose addNamed oracle@0.3.7
+28 silly addNamed semver.valid 0.3.7
+29 silly addNamed semver.validRange 0.3.7
+30 silly mapToRegistry name oracle
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/oracle
+34 verbose addRemoteTarball https://registry.npmjs.org/oracle/-/oracle-0.3.7.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/oracle/-/oracle-0.3.7.tgz',
+35 verbose addRemoteTarball   'b525ef6be174e065bc586189ff06c07f32248551' ]
+36 info retry fetch attempt 1 at 02:15:55
+37 info attempt registry request try #1 at 02:15:55
+38 http fetch GET https://registry.npmjs.org/oracle/-/oracle-0.3.7.tgz
+39 http fetch 200 https://registry.npmjs.org/oracle/-/oracle-0.3.7.tgz
+40 silly fetchAndShaCheck shasum b525ef6be174e065bc586189ff06c07f32248551
+41 verbose addTmpTarball /var/folders/d3/cy3_587j3855vscfpykqz1m80000gn/T/npm-3927-bba7c62b/registry.npmjs.org/oracle/-/oracle-0.3.7.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for oracle@0.3.7
+43 silly cache afterAdd oracle@0.3.7
+44 verbose afterAdd /Users/zhihengchu/.npm/oracle/0.3.7/package/package.json not in flight; writing
+45 verbose afterAdd /Users/zhihengchu/.npm/oracle/0.3.7/package/package.json written
+46 silly install resolved [ { name: 'oracle',
+46 silly install resolved     description: 'Oracle database driver',
+46 silly install resolved     keywords: [ 'database', 'db', 'oracle' ],
+46 silly install resolved     homepage: 'https://github.com/joeferner/node-oracle',
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     version: '0.3.7',
+46 silly install resolved     engines: { node: '>=0.6.0' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     bugs: { url: 'https://github.com/joeferner/node-oracle/issues' },
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git://github.com/joeferner/node-oracle.git' },
+46 silly install resolved     dependencies: {},
+46 silly install resolved     devDependencies: { nodeunit: '~>0.8.0' },
+46 silly install resolved     scripts:
+46 silly install resolved      { test: 'nodeunit test/integration.js test/outparams.js',
+46 silly install resolved        install: 'node-gyp rebuild' },
+46 silly install resolved     main: './index.js',
+46 silly install resolved     gypfile: true,
+46 silly install resolved     _id: 'oracle@0.3.7',
+46 silly install resolved     _shasum: 'b525ef6be174e065bc586189ff06c07f32248551',
+46 silly install resolved     _from: 'oracle@*',
+46 silly install resolved     _npmVersion: '1.4.10',
+46 silly install resolved     _npmUser: { name: 'joeferner', email: 'joe@fernsroth.com' },
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: 'b525ef6be174e065bc586189ff06c07f32248551',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/oracle/-/oracle-0.3.7.tgz' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/oracle/-/oracle-0.3.7.tgz' } ]
+47 info install oracle@0.3.7 into /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite
+48 info installOne oracle@0.3.7
+49 verbose installOne of oracle to /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite not in flight; installing
+50 verbose lock using /Users/zhihengchu/.npm/_locks/oracle-c14cd94f7b672497.lock for /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+51 silly install write writing oracle 0.3.7 to /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+52 silly cache addNamed cb oracle@0.3.7
+53 verbose unbuild node_modules/oracle
+54 verbose gentlyRm vacuuming /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+55 verbose tar unpack /Users/zhihengchu/.npm/oracle/0.3.7/package.tgz
+56 verbose tar unpacking to /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+57 verbose gentlyRm vacuuming /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+61 silly gunzTarPerm extractEntry .npmignore
+62 silly gunzTarPerm extractEntry README.md
+63 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+64 silly gunzTarPerm extractEntry LICENSE
+65 silly gunzTarPerm extractEntry index.js
+66 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+67 silly gunzTarPerm extractEntry INSTALL.md
+68 silly gunzTarPerm extractEntry lib/oracle.js
+69 silly gunzTarPerm extractEntry binding.gyp
+70 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+71 silly gunzTarPerm extractEntry src/outParam.h
+72 silly gunzTarPerm extractEntry src/commitBaton.h
+73 silly gunzTarPerm extractEntry src/connection.h
+74 silly gunzTarPerm extractEntry src/executeBaton.cpp
+75 silly gunzTarPerm extractEntry src/executeBaton.h
+76 silly gunzTarPerm extractEntry src/nodeOracleException.h
+77 silly gunzTarPerm extractEntry src/oracle_bindings.cpp
+78 silly gunzTarPerm modified mode [ 'src/oracle_bindings.cpp', 436, 420 ]
+79 silly gunzTarPerm extractEntry src/oracle_bindings.h
+80 silly gunzTarPerm extractEntry src/outParam.cpp
+81 silly gunzTarPerm extractEntry src/connection.cpp
+82 silly gunzTarPerm modified mode [ 'src/connection.cpp', 436, 420 ]
+83 silly gunzTarPerm extractEntry src/reader.cpp
+84 silly gunzTarPerm extractEntry src/reader.h
+85 silly gunzTarPerm extractEntry src/readerBaton.h
+86 silly gunzTarPerm extractEntry src/rollbackBaton.h
+87 silly gunzTarPerm extractEntry src/statement.cpp
+88 silly gunzTarPerm extractEntry src/statement.h
+89 silly gunzTarPerm extractEntry src/statementBaton.h
+90 silly gunzTarPerm extractEntry src/utils.h
+91 silly gunzTarPerm extractEntry test/integration.js
+92 silly gunzTarPerm extractEntry test/outparams.js
+93 silly gunzTarPerm modified mode [ 'test/outparams.js', 436, 420 ]
+94 silly gunzTarPerm extractEntry test/prepare.js
+95 silly gunzTarPerm extractEntry test/reader.js
+96 silly gunzTarPerm extractEntry tests-settings.json
+97 silly gunzTarPerm modified mode [ 'tests-settings.json', 436, 420 ]
+98 info preinstall oracle@0.3.7
+99 silly install resolved []
+100 verbose about to build /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+101 info build /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+102 verbose linkStuff [ false,
+102 verbose linkStuff   false,
+102 verbose linkStuff   false,
+102 verbose linkStuff   '/Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules' ]
+103 info linkStuff oracle@0.3.7
+104 verbose linkBins oracle@0.3.7
+105 verbose linkMans oracle@0.3.7
+106 verbose rebuildBundles oracle@0.3.7
+107 info install oracle@0.3.7
+108 verbose unsafe-perm in lifecycle true
+109 info oracle@0.3.7 Failed to exec install script
+110 verbose unlock done using /Users/zhihengchu/.npm/_locks/oracle-c14cd94f7b672497.lock for /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+111 verbose stack Error: oracle@0.3.7 install: `node-gyp rebuild`
+111 verbose stack Exit status 1
+111 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
+111 verbose stack     at EventEmitter.emit (events.js:98:17)
+111 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+111 verbose stack     at ChildProcess.emit (events.js:98:17)
+111 verbose stack     at maybeClose (child_process.js:756:16)
+111 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:823:5)
+112 verbose pkgid oracle@0.3.7
+113 verbose cwd /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite
+114 error Darwin 14.1.0
+115 error argv "node" "/usr/local/bin/npm" "install" "oracle"
+116 error node v0.10.33
+117 error npm  v2.1.10
+118 error code ELIFECYCLE
+119 error oracle@0.3.7 install: `node-gyp rebuild`
+119 error Exit status 1
+120 error Failed at the oracle@0.3.7 install script 'node-gyp rebuild'.
+120 error This is most likely a problem with the oracle package,
+120 error not with npm itself.
+120 error Tell the author that this fails on your system:
+120 error     node-gyp rebuild
+120 error You can get their info via:
+120 error     npm owner ls oracle
+120 error There is likely additional logging output above.
+121 verbose exit [ 1, true ]
+122 verbose unbuild node_modules/oracle
+123 info preuninstall oracle@0.3.7
+124 info uninstall oracle@0.3.7
+125 verbose unbuild rmStuff oracle@0.3.7 from /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules
+126 info postuninstall oracle@0.3.7
+127 verbose gentlyRm vacuuming /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+128 silly gentlyRm purging /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules/oracle
+129 silly gentlyRm quitting because other entries in /Users/zhihengchu/Documents/USC/imsc/gtfs/demoSite/node_modules

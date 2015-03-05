@@ -1,0 +1,10 @@
+{
+	"name": "demoSite",
+	"description": "A server for Public transit",
+  	"author": "Zhiheng Chu <victorchuama@gmail.com>",
+	"dependencies": {
+		"mysql" : "2.5.x",
+		"express" : "4.10.5"
+	},
+	"engine": "node 0.10.33"
+}
